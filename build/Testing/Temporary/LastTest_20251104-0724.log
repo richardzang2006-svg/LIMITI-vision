@@ -1,0 +1,18 @@
+Start testing: Nov 04 16:33 CST
+----------------------------------------------------------
+1/1 Testing: MyTest
+1/1 Test: MyTest
+Command: "/root/LIMITI-vision/build/run"
+Directory: /root/LIMITI-vision/build
+"MyTest" start time: Nov 04 16:33 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   4.22 sec
+----------------------------------------------------------
+Test Passed.
+"MyTest" end time: Nov 04 16:33 CST
+"MyTest" time elapsed: 00:00:04
+----------------------------------------------------------
+
+End testing: Nov 04 16:33 CST

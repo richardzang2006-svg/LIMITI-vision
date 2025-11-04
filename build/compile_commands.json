@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/root/LIMITI-vision/build",
+  "command": "/usr/bin/g++ -isystem /usr/include/opencv4  -O2 -g -std=gnu++14 -o CMakeFiles/run.dir/test.cpp.o -c /root/LIMITI-vision/test.cpp",
+  "file": "/root/LIMITI-vision/test.cpp"
+}
+]
