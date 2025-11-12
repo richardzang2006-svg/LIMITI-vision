@@ -1,45 +1,72 @@
-# CMake
+################################
+# CMake Build System
+################################
+# CMake cache and configuration files
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
+CMakeFiles/
+CMakeScripts/
 cmake_install.cmake
-Makefile
 CTestTestfile.cmake
 CTest.cmake
+*.cmake
+!CMakeLists.txt
 
-# Build directories
+# Build output directories
 build/
 Build/
 out/
 dist/
+cmake-build-*/
+.cmake/
 
-# IDE specific files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Executable and object files
+# Build artifacts
+Makefile
+*.make
 *.o
 *.a
 *.so
 *.dylib
 *.dll
 *.exe
+*.out
 
 # Compiled Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
 
-# Testing
+# IDE and Editor specific files
+################################
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.vim/
+.vimrc
+
+# Test and Coverage
+################################
 *.gcda
 *.gcno
 *.gcov
+CTestTestfile.cmake
 
-# Misc
-.cmake/
-*.cmake
-!CMakeLists.txt
+# Ninja
+################################
+.ninja_deps
+.ninja_log
+
+# VS Code API
+################################
+.cmake/api/
+
+# Other
+################################
+*.log
+.cache/
+.local/
