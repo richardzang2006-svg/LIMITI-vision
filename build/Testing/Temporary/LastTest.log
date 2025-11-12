@@ -1,0 +1,33 @@
+Start testing: Nov 12 16:15 CST
+----------------------------------------------------------
+1/1 Testing: MyTest
+1/1 Test: MyTest
+Command: "/home/workspace/vscodeprojects/LIMITI-vision/build/run"
+Directory: /home/workspace/vscodeprojects/LIMITI-vision/build
+"MyTest" start time: Nov 12 16:15 CST
+Output:
+----------------------------------------------------------
+[ WARN:0@0.526] global ./modules/videoio/src/cap_gstreamer.cpp (1405) open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+[ WARN:0@0.528] global ./modules/videoio/src/cap_gstreamer.cpp (1716) setProperty OpenCV | GStreamer warning: GStreamer: unhandled property
+[ WARN:0@1.861] global ./modules/videoio/src/cap_gstreamer.cpp (1716) setProperty OpenCV | GStreamer warning: GStreamer: unhandled property
+摄像头已打开，预热中...
+开始实时显示，按 'q' 键退出...
+已显示 30 帧
+已显示 60 帧
+已显示 90 帧
+已显示 120 帧
+已显示 150 帧
+已显示 180 帧
+已显示 210 帧
+已显示 240 帧
+已显示 270 帧
+退出程序
+<end of output>
+Test time =  14.03 sec
+----------------------------------------------------------
+Test Passed.
+"MyTest" end time: Nov 12 16:15 CST
+"MyTest" time elapsed: 00:00:14
+----------------------------------------------------------
+
+End testing: Nov 12 16:15 CST

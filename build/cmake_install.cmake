@@ -1,4 +1,4 @@
-# Install script for directory: /root/LIMITI-vision
+# Install script for directory: /home/workspace/vscodeprojects/LIMITI-vision
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/LIMITI-vision/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/workspace/vscodeprojects/LIMITI-vision/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
