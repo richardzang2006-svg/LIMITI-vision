@@ -1,4 +1,0 @@
-/home/workspace/vscodeprojects/LIMITI-vision/build/CMakeFiles/run.dir
-/home/workspace/vscodeprojects/LIMITI-vision/build/CMakeFiles/test.dir
-/home/workspace/vscodeprojects/LIMITI-vision/build/CMakeFiles/edit_cache.dir
-/home/workspace/vscodeprojects/LIMITI-vision/build/CMakeFiles/rebuild_cache.dir
