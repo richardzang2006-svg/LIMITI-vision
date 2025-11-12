@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/workspace/vscodeprojects/LIMITI-vision/build",
-  "command": "/usr/bin/g++ -isystem /usr/include/opencv4  -O2 -Wl,--no-as-needed -g -std=gnu++14 -o CMakeFiles/run.dir/test.cpp.o -c /home/workspace/vscodeprojects/LIMITI-vision/test.cpp",
-  "file": "/home/workspace/vscodeprojects/LIMITI-vision/test.cpp",
-  "output": "CMakeFiles/run.dir/test.cpp.o"
-}
-]

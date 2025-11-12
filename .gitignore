@@ -1,0 +1,45 @@
+# CMake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+CTest.cmake
+
+# Build directories
+build/
+Build/
+out/
+dist/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Executable and object files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Compiled Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing
+*.gcda
+*.gcno
+*.gcov
+
+# Misc
+.cmake/
+*.cmake
+!CMakeLists.txt

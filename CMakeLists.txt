@@ -21,7 +21,7 @@ enable_testing()
 # 获取环境变量，如果没有设置就用默认值
 set(TEST_DISPLAY "$ENV{DISPLAY}")
 if(NOT TEST_DISPLAY)
-    set(TEST_DISPLAY ":99")
+    set(TEST_DISPLAY ":0")
 endif()
 
 set(TEST_LD_LIBRARY_PATH "$ENV{LD_LIBRARY_PATH}")
