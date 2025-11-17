@@ -1,36 +1,18 @@
-cmake_minimum_required(VERSION 3.5)
-project(LIMITI-vision)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+PROJECT(test)
 
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Wl,--no-as-needed")
+#SET(CMAKE_PREFIX_PATH "/usr/lib/x86_64-linux-gnu/cmake")
 
-# 查找OpenCV
 find_package(OpenCV REQUIRED)
+
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-# 创建可执行文件
-add_executable(run test.cpp)
+include_directories(include)
 
-# 链接OpenCV库
+FILE(GLOB_RECURSE SRC_FILES src/*.cpp)
+FILE(GLOB_RECURSE HDR_FILES include/*.hpp)
+
+ADD_EXECUTABLE(run main.cpp ${HDR_FILES} ${SRC_FILES})
+add_definitions(-std=c++14 -O2)
+
 target_link_libraries(run ${OpenCV_LIBS})
-
-# 启用测试
-enable_testing()
-
-# 获取环境变量，如果没有设置就用默认值
-set(TEST_DISPLAY "$ENV{DISPLAY}")
-if(NOT TEST_DISPLAY)
-    set(TEST_DISPLAY ":0")
-endif()
-
-set(TEST_LD_LIBRARY_PATH "$ENV{LD_LIBRARY_PATH}")
-if(NOT TEST_LD_LIBRARY_PATH)
-    set(TEST_LD_LIBRARY_PATH "/usr/lib/x86_64-linux-gnu:/usr/local/lib")
-endif()
-
-# 创建测试并设置环境
-add_test(NAME MyTest COMMAND ${CMAKE_BINARY_DIR}/run)
-set_tests_properties(MyTest PROPERTIES
-    ENVIRONMENT "DISPLAY=${TEST_DISPLAY};LD_LIBRARY_PATH=${TEST_LD_LIBRARY_PATH}"
-)
